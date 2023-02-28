@@ -1,8 +1,10 @@
 import express from "express"
-import { getPosts, createPost, deletePost } from "../controller/postController.js"
+import { getPosts, getPost, createPost, deletePost } from "../controller/postController.js"
 const router = express.Router()
 
-// GET all posts or one with id
+// GET post
+router.get('/id/', getPost)
+// GET posts
 router.get('/', getPosts)
 // POST post
 router.post('/', createPost)
