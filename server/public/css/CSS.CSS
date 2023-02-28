@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body,html{
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+img[alt*="main-gif"]{
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+img[alt*="main-gif-login"]{
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    
+}
+
+#container{
+    position: absolute;
+    top:0;
+    width: 99.5vw;
+    height: 7vh;
+    transition:  0.2s;
+    display: flex;
+}
+#container:hover{
+    background-color: gray;
+    transition:  0.2s;
+}
+#container>img{
+    width: 18vw;
+    height: 6vh;
+    padding-left:2vw;
+    padding-top: 0.4vw;
+    filter: invert(1);
+}
+#container>p {
+    padding-left: 57vw;
+    padding-top: 2.3vh;
+    height: 5vh;
+    width: 70vw;
+    padding-right: 2vh;
+    
+}
+#container>p>a {
+    color:whitesmoke;
+    text-decoration: none;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 1.5vw;
+    width: 10vw;
+    height: 7vh;
+    
+    font-weight: bold;
+    transition:  0.2s;
+}
+#container>p>a:hover {
+    transition:  0.2s;
+    background-color: tan;
+    border-radius: 1vh;
+}
+#podmid{
+    position: relative;
+}
+#podmid>p{
+    position: absolute;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 6vh;
+    transition: 0.2s;
+}
+#podmid>p:hover:not(#p1){
+    border-radius: 2vh;
+    border:solid tan;
+    background-color: tan;
+    transition: 0.2s;
+
+    text-shadow:5px 5px #888;
+}
+#podmid>#p1{
+    position: absolute;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+        font-size: 2vh !important;
+}
+#upitnik{
+    background-color: tan;
+}
+input[type=submit]{
+    border: none;
+    padding: 7px;
+}
+#loginMid{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+#upitnik{
+    position: absolute;
+    top: 45% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    padding: 5vw;
+    font-size: 2vw;
+    border-radius: 1vw;
+}
+
